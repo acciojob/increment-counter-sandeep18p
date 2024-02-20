@@ -1,8 +1,11 @@
-//your JS code here. If required.
-const tc = document.getElementById("count");
-var c1 =0;
-tc.innerHTML=c1;
-function increment(){
-c1++;
-  tc.innerHTML = c1;
-}
+const counterParagraph = document.getElementById("counter");
+const incrementBtn = document.getElementById("incrementBtn");
+let counterValue = 0;
+
+counterParagraph.textContent = `Counter: ${counterValue}`;
+
+incrementBtn.addEventListener("click", function() {
+    alert(`Un-incremented value: ${counterValue}`);
+    counterValue++;
+    counterParagraph.textContent = `Counter: ${counterValue}`;
+});
