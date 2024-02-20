@@ -1,11 +1,11 @@
-const counterParagraph = document.getElementById("counter");
+const counterParagraph = document.getElementById("counter1");
 const incrementBtn = document.getElementById("incrementBtn");
-let counterValue = 0;
+let counter = 0;
 
-counterParagraph.textContent = `${counterValue}`;
+counterParagraph.textContent = `${counter}`;
 
 incrementBtn.addEventListener("click", function() {
-    alert(`${counterValue}`);
-    counterValue++;
-    counterParagraph.textContent = `${counterValue}`;
+    alert(`${counter}`);
+    counter++;
+    counterParagraph.textContent = `${counter}`;
 });
