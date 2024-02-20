@@ -5,7 +5,8 @@ let counterValue = 0;
 counterParagraph.textContent = `${counterValue}`;
 
 incrementBtn.addEventListener("click", function() {
-    alert(`${counterValue}`);
+    alert(`${
+counterParagraph.textContent}`);
     counterValue++;
     counterParagraph.textContent = `${counterValue}`;
 });
