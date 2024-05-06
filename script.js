@@ -1,8 +1,8 @@
 const counterParagraph = document.getElementById("counter");
 const incrementBtn = document.getElementById("incrementBtn");
-let alertText = 0;
+let alertText = counterParagraph.textContent;
 
-counterParagraph.textContent = `${alertText}`;
+
 
 incrementBtn.addEventListener("click", function() {
     alert(`${alertText}`);
